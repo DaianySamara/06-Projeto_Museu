@@ -1,0 +1,189 @@
+/*-------------------------------------------*/
+/* estrutura do site*/
+/*-------------------------------------------*/
+
+body {
+    background: #f4f2ec url(../img/fundo.png) repeat-x; /*fundo*/
+    font: 12px "Lucida Grande", "lucida Sans Unicode", Arial, sans-serif; /*fonte*/
+}
+
+#container {
+    width: 1080px; /*largura*/
+    margin: 0 auto; /*auto é para centralizar */
+}
+
+a:link, a:active, a:visited{
+    color: #af670a; /*cor*/
+    text-decoration: none; /*decoração de texto: nenhuma*/
+}
+
+a:hover{
+    color: #227115;/*cor*/
+
+}
+/*-------------------------------------------*/
+/*logo ---------------*/
+/*-------------------------------------------*/
+#logo a {
+    width: 248px; /*largura*/
+    height: 21px; /*altura*/
+    text-indent: -9999px; /* para tirar o texto da exibição e nao tirar ela do html.*/
+    display: block; /*para que se comporte como bloco*/
+    background: url(../img/logo.png) no-repeat ; /*no repeat  para nao repetir*/
+}
+/*-------------------------------------------*/
+/*------ barra de navegação----*/
+/*-------------------------------------------*/
+header{
+    padding: 15px 0; /*preenchimento*/
+    height: 55px; /*altura*/
+}
+
+nav ul{
+    list-style: none; /*estilo de lista: nenhum*/
+    margin: 20px; /*margem*/
+    float: right; /*flutuar o menu de navegação para direita*/
+}
+
+nav ul li{
+    float: left; /*flutuar: esquerda*/
+}
+
+nav ul li a:link{
+    display: block; /*exibicao que deseja*/
+    margin-right: 25px; /*margem a direita*/
+    padding-bottom: 3px; /*preenximento interior*/
+    text-transform: uppercase; /*texto maiusculas*/
+}
+
+nav ul li a:houver{
+    border-bottom: 1px solid #535858; /*borda inferior*/
+}
+/*-------------------------------------------*/
+/* Formatação Principal*/
+/*-------------------------------------------*/
+#conteudo{
+    width: 710px;/*largura*/
+    float: left;/*flutuar o menu de navegação para esquerda*/
+    margin-bottom: 20px;
+    
+}
+
+aside{
+    width: 350px;/*largura*/
+    float: right; /*flutuar o menu de navegação para direita*/
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+section#visita { /*puxar a secao que esta o id, por isso que fica junto*/
+    background: #cdc8b1;/*fundo*/
+    padding: 10px 27px 27px 27px; /*preenchimento*/
+    margin-top: 10px; /*margem superior*/
+}
+
+section#galeria{
+    padding: 0 27px 0 27px;
+}
+
+section#galeria a{
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    border: 1px;
+    float:left;
+    padding: 17px 15px 17px 15px;
+    margin: 10px 0 0 20px;
+}
+
+section#galeria img{
+    margin-left: 2px;
+    margin-top: 3px;
+
+}
+
+article{
+    float: left;
+    width: 310px;
+}
+
+article#video{
+    margin-left: 30px;
+}
+
+article#mapa{
+    margin-left: 37px;
+}
+
+article#exposicoes{
+    margin: 15px 0 0 25px;
+}
+
+article#historia{
+     margin: 15px 15px 0 40px;
+}
+
+
+h3{
+    color: #227115;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+h4{
+    color: #86521a; /*cor*/
+    text-transform: uppercase; /*transformação de texto: maiúsculas*/
+    padding-bottom: 3px; /*estofamento ou preenchimento do fundo:*/
+    margin-bottom: 0; /*margem inferior:*/
+}
+
+
+/*-------------------------------------------*/
+/* Formatação formularios*/
+/*-------------------------------------------*/
+
+input {
+    height: 20px; /*altura:*/
+    width: 80px; /*largura*/
+    background: #fff;/*fundo*/
+    border: none; /*borda: nenhuma ( padrao)*/
+    font-size: 1em; /*tamanho da fonte*/
+}
+
+input.campo{
+    border: 1px solid #ada484;
+}
+
+input.botao{
+    background: #9b9271;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+fieldset{
+    border: none;  
+}
+
+legend{
+    display: none;
+}
+
+/*-------------------------------------------*/
+/* Formatação Rodapé*/
+/*-------------------------------------------*/
+
+footer{
+    clear: both; /*para limpar o objeto fluante na seção*/
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(../img/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+
+footer>p a {/*busca a que esta dentro de p que esta dentro de footer */
+    padding: 2px 10px;
+
+}
